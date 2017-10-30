@@ -10,12 +10,15 @@ body{
   color: #fff;*/
 }
 
+
 .tabs .tab a:hover, .tabs .tab a.active{
   font-weight: bold;
 }
 
 .tabs .tab  a {
   font-size: 24px;
+  padding:0;
+  display: inline;
 }
 
 .divider {
@@ -29,6 +32,10 @@ nav {
 
 .btn, .btn-large, .btn:hover, .btn-large:hover {
   box-shadow: none;
+}
+
+.btn-full-width {
+  width: 100%;
 }
 
 a.text-hyperlink {
@@ -102,4 +109,8 @@ a.text-hyperlink {
   font-size: 10px;
   color: grey;
   padding-top: -100px;
+}
+
+h6.title {
+  font-weight: bold;
 }
