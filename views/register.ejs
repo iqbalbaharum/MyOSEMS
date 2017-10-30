@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DevCon Happening</title>
+        <% include partial/head %>
+    </head>
+
+    <body>
+      <header>
+        <% include partial/nav %>
+      </header>
+
+      <main>
+
+        <div class="container">
+
+          <div class="section wrapper center-align">
+            <h4>Devcon Academia: Decoupled - Machine Learning</h4>
+            <div class="info">Fri, October 13, 2017 | <span class="space">11:00 AM – 17:30 PM</span> </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="section">
+            <div class="row">
+              <form action="#" class="col s12">
+                <div class="row">
+                  <div class="col s2"></div>
+                  <div class="input-field col s8">
+                    <input id="full_name" type="text" class="validate" required>
+                    <label for="full_name">Full Name</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s2"></div>
+                  <div class="input-field col s4">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <input id="phone" type="number" class="validate" required>
+                    <label for="phone">Mobile Number</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s2"></div>
+                  <div class="input-field col s4">
+                    <select>
+                      <option value="" disabled selected>Choose</option>
+                      <option value="1">Beginner</option>
+                      <option value="2">Intermediate</option>
+                      <option value="3">Advanced</option>
+                    </select>
+
+                    <label>Programming Skills</label>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input id="github" type="text">
+                      <label for="github">Github URL</label>
+                    </div>
+                    <span class="notes">If you don't Github account, please register at <a href="http://www.github.com">github.com</a></span>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s2"></div>
+                  <div class="col s8">
+                    <input type="checkbox" id="agree" class="validate" required/>
+                    <label for="agree">By clicking "SUBMIT" below, I acknowledge to give my heart and soul to DevCon</label>
+                  </div>
+                </div>
+
+                <div class="row half-wrapper">
+                  <div class="col s2"></div>
+                  <div class="col s4">
+                    <button class="btn-large waves-effect waves-light" type="submit" name="action">Submit
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <% include partial/script %>
+      <script>
+        $(document).ready(function() {
+          $('select').material_select();
+        });
+      </script>
+      
+    </body>
+</html>
